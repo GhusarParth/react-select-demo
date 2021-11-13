@@ -1,13 +1,14 @@
 const vegitables=[
-    {lable:"Tomato",value:"Tomato"},
-    {lable:"Cauliflower", value:"Cauliflower"},
-    {lable:"Carrot", value:"Carrot"},
-    {lable:"Capsicum",value:"Capsicum"},
-    {lable:"Cabbage",value:"Cabbage"},
-    {lable:"Potato",value:"Potato"},
-    {lable:"Lady-Finger",value:"Lady-Finger"},
-    {lable:"Onion",value:"Onion"},
-    {lable:"Sweet-Potato",value:"Sweet-Potato"},
-    {lable:"Qucumber",value:"Qucumber"}
+    {label:"Tomato",value:"Tomato"},
+    {label:"Cauliflower", value:"Cauliflower"},
+    {label:"Carrot", value:"Carrot"},
+    {label:"Capsicum",value:"Capsicum"},
+    {label:"Cabbage",value:"Cabbage"},
+    {label:"Potato",value:"Potato"},
+    {label:"Lady-Finger",value:"Lady-Finger"},
+    {label:"Onion",value:"Onion"},
+    {label:"Sweet-Potato",value:"Sweet-Potato"},
+    {label:"Qucumber",value:"Qucumber"}
 ]
 
+export default vegitables
