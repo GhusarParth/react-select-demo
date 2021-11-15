@@ -4,9 +4,14 @@ import vegitables from '../vagetableData'
 
 const SimpleDropdown = () => {
     return (
+      <>
+      <p>Simple Dropdown</p>
+      <br />
         <Select
         options={vegitables}
       />
+      <hr />
+      </>
     )
 }
 

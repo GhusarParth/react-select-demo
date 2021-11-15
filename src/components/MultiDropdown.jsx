@@ -6,13 +6,16 @@ function MultiDropdown() {
     console.log("vegitables", vegitables);
     return (
         <>
-            <p>Multi Select Drop Down</p>            
+            <p>Multi Select Drop Down</p>    
+            <br />        
             <Select
             className="basic-multi-select"
             name="vegitables"
             options={vegitables}
             isMulti
             />
+            <br />
+            <hr />
         </>
     )
 }

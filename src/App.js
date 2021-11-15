@@ -1,5 +1,6 @@
 import './App.css';
 import MultiDropdown from './components/MultiDropdown';
+import MultiSelectWithCheckBox from './components/MultiSelectWithCheckBox';
 import SimpleDropdown from './components/SimpleDropdown';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <SimpleDropdown/>
       <MultiDropdown/>
+      <MultiSelectWithCheckBox/>
     </div>
   );
 }
