@@ -1,4 +1,5 @@
 import './App.css';
+import AsyncSelect from './components/AsyncSelect';
 import MultiDropdown from './components/MultiDropdown';
 import MultiSelectWithCheckBox from './components/MultiSelectWithCheckBox';
 import SimpleDropdown from './components/SimpleDropdown';
@@ -9,6 +10,7 @@ function App() {
       <SimpleDropdown/>
       <MultiDropdown/>
       <MultiSelectWithCheckBox/>
+      <AsyncSelect/>
     </div>
   );
 }
