@@ -1,5 +1,8 @@
+
 import './App.css';
-import AsyncSelect from './components/AsyncSelect';
+import AsyncPaginates from './components/AsyncPaginate';
+import AsyncSelectDropdown from './components/AsyncSelectDropdown';
+// import AsyncSelect from './components/AsyncPaginate';
 import MultiDropdown from './components/MultiDropdown';
 import MultiSelectWithCheckBox from './components/MultiSelectWithCheckBox';
 import SimpleDropdown from './components/SimpleDropdown';
@@ -7,10 +10,12 @@ import SimpleDropdown from './components/SimpleDropdown';
 function App() {
   return (
     <div className="App">
-      <SimpleDropdown/>
-      <MultiDropdown/>
-      <MultiSelectWithCheckBox/>
-      <AsyncSelect/>
+      <SimpleDropdown />
+      <MultiDropdown />
+      <MultiSelectWithCheckBox />
+      <AsyncPaginates />
+    <AsyncSelectDropdown/>
+
     </div>
   );
 }
