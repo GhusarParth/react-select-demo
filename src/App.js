@@ -1,5 +1,6 @@
 
 import './App.css';
+import AsyncApiCallDropdown from './components/AsyncApiCallDropdown';
 import AsyncPaginates from './components/AsyncPaginate';
 import AsyncSelectDropdown from './components/AsyncSelectDropdown';
 // import AsyncSelect from './components/AsyncPaginate';
@@ -15,7 +16,7 @@ function App() {
       <MultiSelectWithCheckBox />
       <AsyncPaginates />
     <AsyncSelectDropdown/>
-
+    <AsyncApiCallDropdown/>
     </div>
   );
 }
