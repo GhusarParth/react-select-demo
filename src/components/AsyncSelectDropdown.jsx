@@ -4,11 +4,9 @@ import vegitables from '../vagetableData';
 
 const AsyncSelectDropdown = () => {
     
-    const filterData =(e)=> vegitables.filter(vegitable => vegitable.label.toLowerCase().includes(e.toLowerCase()))
-        const loadOptions = (e, callBack) => {
-            console.log(e);
-                callBack(filterData(e))        
-        };
+    const loadOptions = (e, callBack) => {
+            callBack(()=>vegitables.filter(vegitable => vegitable.label.toLowerCase().includes(e?.toLowerCase())))        
+    };
     
         return (
             <>

@@ -10,7 +10,7 @@ const MultiSelectWithCheckBox = () => {
             <Select
                 options={vegitables}
                 isMulti
-                allowSelectAll
+                // allowSelectAll
                 // value={this.state.optionSelected}
                 components={{ Option }}
                 closeMenuOnSelect={false}
@@ -30,8 +30,7 @@ const Option = (props) => {
                 <input
                     type="checkbox"
                     checked={props.isSelected}
-                    onChange={() => null}
-                />{" "}
+                />
                 <label>{props.label}</label>
             </components.Option>
         </div>
