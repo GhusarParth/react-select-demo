@@ -1,7 +1,7 @@
 import React from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 
-const AsyncSelect = () => {
+const AsyncPaginates = () => {
     const loadOptions = async (e) => {
         const response = await fetch(
             `https://www.anapioficeandfire.com/api/houses?region=The Westerlands&page=1&pageSize=10`
@@ -35,4 +35,4 @@ const AsyncSelect = () => {
     );
 };
 
-export default AsyncSelect;
+export default AsyncPaginates;
