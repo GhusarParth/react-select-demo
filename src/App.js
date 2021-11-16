@@ -5,6 +5,7 @@ import AsyncPaginates from './components/AsyncPaginate';
 import AsyncSelectDropdown from './components/AsyncSelectDropdown';
 // import AsyncSelect from './components/AsyncPaginate';
 import MultiDropdown from './components/MultiDropdown';
+import MultiObject from './components/MultiObject';
 import MultiSelectWithCheckBox from './components/MultiSelectWithCheckBox';
 import SimpleDropdown from './components/SimpleDropdown';
 
@@ -15,8 +16,9 @@ function App() {
       <MultiDropdown />
       <MultiSelectWithCheckBox />
       <AsyncPaginates />
-    <AsyncSelectDropdown/>
-    <AsyncApiCallDropdown/>
+      <AsyncSelectDropdown/>
+      <AsyncApiCallDropdown/>
+      <MultiObject/>
     </div>
   );
 }
