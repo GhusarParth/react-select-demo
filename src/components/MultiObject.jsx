@@ -1,26 +1,25 @@
 import React from 'react'
 import AsyncSelect from 'react-select/async';
 
-const AsyncApiCallDropdown = () => {
-
+function MultiObject() {
     const loadOptions = async (inputValue) => {
-        const responce = await fetch(
-            inputValue ? `https://jsonplaceholder.typicode.com/photos?id=${inputValue}` : `https://jsonplaceholder.typicode.com/photos?_start=1&_end=10`
-        )
-        return responce.json()
+        const responce = await fetch(`https://jsonplaceholder.typicode.com/users` )
+        let data = await responce.json()
+        let dataOne = await data.filter(address => address.address.street.toLowerCase().includes(inputValue.toLowerCase()))
+        return dataOne?dataOne: data
     };
 
     const style = { alignItems: "center", display: "flex" }
     return (
         <div className="App">
-            <p>Async Select Api Call</p>
+
+            <p>Multi Object with an api in option</p>
             <AsyncSelect
-                // cacheOptions
                 defaultOptions
                 getOptionLabel={(e) => (
                     <div style={style}>
-                        <img style={{ height: "20px" }} src={e.thumbnailUrl} alt="imgs"></img> &nbsp;
-                        <span> {e.title}</span>
+                        <span>{e.address.suite}</span> &nbsp;
+                        <span>{e.address.street}</span>
                     </div>
                 )}
                 getOptionValue={(e) => e.url}
@@ -30,4 +29,4 @@ const AsyncApiCallDropdown = () => {
         </div>)
 }
 
-export default AsyncApiCallDropdown
+export default MultiObject
